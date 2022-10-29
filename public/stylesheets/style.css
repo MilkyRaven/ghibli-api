@@ -1,18 +1,80 @@
+@font-face {
+    font-family: "Rajdhani";
+    src: url(/font/Rajdhani/Rajdhani-Medium.ttf);
+}
 * {
-    margin: auto 0;
+    margin: 0 auto;
     padding: 0;
-    background-color: cornflowerblue;
+    background-color: #4FADBF;
     color: whitesmoke;
+    font-family: "Rajdhani";
 }
 
 h1 {
-    font-size: 5em;
+    font-size: 6em;
+    /* margin-left: 25px; */
+}
+h2 {
+    font-size: 2em;
+    /* margin-left: 70px; */
+}
+
+a {
+    text-decoration: none;
+}
+.header-container {
+    display: flex;
+}
+.menu {
+    font-size: 2em;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+}
+.menu > a > li {
+    padding: 10px;
+}
+.menu > a :hover {
+    opacity: 0.6;
+    font-size: 1.2em;
+}
+nav {
+    display: flex;
+    flex-flow: nowrap;
+}
+#chihiro {
+    margin-top: 45px;
+    height: 600px;
 }
 .film-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
+.film {
+    display: flex;
+    flex-flow: column;
+    padding: 30px;
+}
 .film-img {
     width: 200px;
+    padding: 20px;
+}
+footer {
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+footer > p, .contact > a > li {
+    color: #4FADBF;
+    background-color: white;
+}
+.contact {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.contact > a > li {
+    padding: 20px;
 }
