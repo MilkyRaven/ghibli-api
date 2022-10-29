@@ -15,10 +15,11 @@ hbs.registerPartials(__dirname + "/views/partials")
 
 app.get("/", async (req, res) => {
     try{
-      const response = await axios.get(`https://ghibliapi.herokuapp.com/films/58611129-2dbc-4a81-a72f-77ddfc1b1b49`)
-      const film = response.data
-      console.log(film)
-      res.render("index", film)
+      const response = await axios.get(`https://ghibliapi.herokuapp.com/films`)
+      const films = response.data
+
+      console.log(films)
+      res.render("index", {films})
     } catch (err) {
       console.log(err)
     }
