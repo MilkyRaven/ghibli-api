@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Document</title>
 </head>
 <body>
     <h1>Ghibli Films</h1>
-    {{#each films}}
-    {{this.title}}
-    
-    <img src="{{this.image}}" alt="">
-   
-    {{this.original_title}}
-    {{this.original_title_romanised}}
-    {{this.release_date}}
-    {{this.director}}
-    {{this.description}}
-    {{/each}}
+
+    <div class="film-card">
+        {{#each films}}
+        <div class="film">
+        <h2>{{this.title}}</h2>
+        <img class="film-img" src="{{this.image}}" alt="">
+        <h3>{{this.original_title}}</h3>
+        <h3>{{this.original_title_romanised}}</h3>
+        <p>{{this.release_date}}</p>
+        <h4>{{this.director}}</h4>
+        <p>{{this.description}}</p>
+        </div>
+        {{/each}}
+    </div>
 
 </body>
 </html>

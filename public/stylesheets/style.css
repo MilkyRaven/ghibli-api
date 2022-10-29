@@ -1,0 +1,16 @@
+* {
+    margin: auto 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 5em;
+}
+.film-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.film-img {
+    width: 200px;
+}
