@@ -5,9 +5,11 @@
 * {
     margin: 0 auto;
     padding: 0;
-    background-color: #4FADBF;
-    color: whitesmoke;
     font-family: "Rajdhani";
+}
+body {
+    color: whitesmoke;
+    background-color: #4FADBF;
 }
 
 h1 {
@@ -21,22 +23,30 @@ h2 {
 
 a {
     text-decoration: none;
+    color: white;
 }
 .header-container {
+    display: flex;
+}
+.main-text {
     display: flex;
 }
 .menu {
     font-size: 2em;
     list-style: none;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
+    align-items: center;
 }
 .menu > a > li {
     padding: 10px;
 }
+
 .menu > a :hover {
     opacity: 0.6;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    transition: font-size 0.5s;
+    transition-timing-function: ease-in-out;
 }
 nav {
     display: flex;
@@ -50,15 +60,26 @@ nav {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    margin: 20px;
 }
 .film {
     display: flex;
     flex-flow: column;
     padding: 30px;
+    margin: 30px;
+    color:#4FADBF;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.film > h3, p, h4{
+    padding: 5px;
+}
+.film > p {
+    color:#4e7b84
 }
 .film-img {
     width: 200px;
-    padding: 20px;
+    padding: 10px;
 }
 footer {
     background-color: white;

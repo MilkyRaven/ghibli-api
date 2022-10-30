@@ -8,7 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>List of Ghibli Films</h1>
+    <header>
+        <div class="main-text">
+            <div class="logo">
+            <a id="title" href="/"><h1>STUDIO GHIBLI</h1></a>
+            <h2>A fanbase webpage <br> with your favourite Ghibli lore ✨</h2>
+        </div>
+    <nav>
+            <ul class="menu">
+                <a href=""><li>About</li></a>
+                <a href="film-list"><li>Movie List</li></a>
+                <a href=""><li>Resources</li></a>
+            </ul>
+        </div>
+        </nav>
+    </header>
 
     <div class="film-card">
         {{#each films}}
@@ -20,9 +34,6 @@
         <p>{{this.release_date}}</p>
         <h4>{{this.director}}</h4>
         <p>{{this.description}}</p>
-        <button>
-            <a href="">Read More</a>
-        </button>
         </div>
         {{/each}}
     </div>
